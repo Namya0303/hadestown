@@ -3,8 +3,7 @@
 :root {
     --primary-color: #c50000;
     --secondary-color: #b10000;
-    --nav-bg-color: #14171c;
-    --font-color: #000;
+    --dark-bg-color: #14171c;
     --bg-color: #ffeec5;
     --heading-color: #000;
     --overlay-color: rgba(20, 23, 28, 0.5);
@@ -76,7 +75,7 @@ body {
 }
 
 .navbar a {
-    float: left;
+    float: right;
     display: block;
     color: var(--secondary-color);
     text-align: center;
@@ -86,8 +85,10 @@ body {
     padding: 10px 15px;
     position: relative;
     z-index: 1;
-    font-size: 15;
-    margin: 1%;
+    font-size: 25;
+    margin: 0.5%;
+    font-family: 'garage-gothic', sans-serif;
+    text-transform: uppercase;
 }
 
 .navbar a::after {
@@ -108,10 +109,11 @@ body {
 .nav-img {
     padding: 0 !important;
     margin: 0 !important;
+    float: left !important;
 }
 
 .nav-img img {
-    width: 25vw;
+    width: 20vw;
 }
 
 .nav-img::after {
@@ -172,6 +174,9 @@ body {
     font-size: 25;
     text-transform: uppercase;
     font-weight: 500 !important; 
+    font-family: 'garage-gothic', sans-serif;
+    font-size: 30;
+    text-transform: uppercase;
 }
 
 .sidenav a::after {
@@ -189,7 +194,7 @@ body {
 }
 
 .sidenav a:hover::after {
-    width: 20%;
+    width: 50%;
 }
 
 .sidenav a:hover {
@@ -280,24 +285,11 @@ body {
 /*ABOUT*/
 
 .section-head h2{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'garage-gothic', sans-serif;
     font-weight: 300;
     color: var(--primary-color);
-}
-
-#about h4,h5 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--font-color);
-}
-
-#about i {
-    font-size: 50px;
-    color: #292929;
-    margin: 10px;
-    color: var(--font-color);
+    font-size: 50;
+    letter-spacing: 3px;
 }
 .row {
     margin: 0;
@@ -330,9 +322,9 @@ body {
 
 /* PEOPLE */
 
-#people {
+.dark {
     color: var(--bg-color);
-    background-color: var(--nav-bg-color);
+    background-color: var(--dark-bg-color);
 }
 
 .people-pics{
@@ -366,12 +358,37 @@ body {
     display: block;
 }
 
+.links {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.links span {
+    font-family: 'garage-gothic', sans-serif;
+    transition: .3s;
+}
+
+.links span:hover, .links span.active{
+    color: var(--primary-color);
+}
+
+.team-section{
+    display: none;
+}
+
+.team-section.active{
+    display: block;
+}
+
 .people p{
     margin-bottom: 20px;
 }
 
 .people .description{
-    letter-spacing: 4px;
     font-size: 20;
 }
 
@@ -380,17 +397,42 @@ body {
     font-family: 'garage-gothic', sans-serif;
     font-style: normal;
     font-weight: 700;
+    font-size: 30;
+    letter-spacing: 3px;
 }
 
 .people .description h2 {
     color: var(--primary-color);
+    font-size: 45;
 }
 
-/*END*/
+.team-info {
+    margin: 20px;
+}
+
+.team-text {    
+    font-family: 'garage-gothic', sans-serif;
+}
+
+.team-text h4 {
+    font-size: 30; 
+}
+
+.red-heading {
+    color: var(--primary-color);
+}
+
+/* POSTERS */
+
+.poster {
+    width: 90%;
+}
+
+/* END */
 
 #end {
     color: var(--bg-color);
-    background-color: var(--nav-bg-color);
+    background-color: var(--dark-bg-color);
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
     padding: 30px;
