@@ -35,6 +35,12 @@ html {
     background-color: var(--scroll-fg-color);
 }
 
+@font-face {
+    font-family: "garage-gothic";
+    src: url("");
+}
+
+
 body {
     overflow-x: hidden;
     background-color: var(--bg-color);
@@ -276,12 +282,7 @@ body {
 .section-head h2{
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    color: var(--font-color);
-}
-
-.section-head hr {
-    border-top: solid 2px var(--primary-color);
-    width: 20%;
+    color: var(--primary-color);
 }
 
 #about h4,h5 {
@@ -319,12 +320,70 @@ body {
 
 .line {
     text-align: center;
+    background-image: url(images/line.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2%;
+    width: 40vh;
 }
-.line::after {
-    
+
+/* PEOPLE */
+
+#people {
+    color: var(--bg-color);
+    background-color: var(--nav-bg-color);
 }
-.line::before {
-    
+
+.people-pics{
+    padding: 40px 0;
+}
+
+.people-pics img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+    filter: grayscale(50%);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.people-pics img:hover, .people-pics img.active{
+    filter: none;
+}
+
+.people-contents{
+    max-width: 600px;
+    margin: auto;
+}
+
+.people{
+    display: none;
+}
+
+.people.active{
+    display: block;
+}
+
+.people p{
+    margin-bottom: 20px;
+}
+
+.people .description{
+    letter-spacing: 4px;
+    font-size: 20;
+}
+
+.people .description h2, .people .description h4 {
+    text-transform: uppercase;
+    font-family: 'garage-gothic', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.people .description h2 {
+    color: var(--primary-color);
 }
 
 /*END*/
