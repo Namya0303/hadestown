@@ -321,8 +321,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 2%;
-    width: 40vh;
+    height: 5%;
+    width: 40%;
 }
 
 /* PEOPLE */
@@ -437,26 +437,19 @@ body {
 /* END */
 
 #end {
-    color: var(--bg-color);
-    background-color: var(--dark-bg-color);
     font-size: 11px;
     font-family: 'Open Sans', sans-serif;
-    padding: 30px;
 }
     
 .font-alt {
-    color: var(--bg-color);
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     font-size: 12px;
 }
 
-#end .font-alt a {
-    padding: 0 2%;
-}
-
-#end a {
-    color: var(--bg-color);
+#end .font-alt a img {
+    margin: 0 2%;
+    width: 50%;
 }
  
 /* ANIMATIONS */
