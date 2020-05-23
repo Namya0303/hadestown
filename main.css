@@ -316,11 +316,8 @@ body {
 }
 
 .line {
-    text-align: center;
-    background-image: url(images/line.svg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-color: var(--primary-color);
+    border-width: 2px;
     height: 5%;
     width: 40%;
 }
