@@ -291,6 +291,11 @@ body {
     font-size: 50;
     letter-spacing: 3px;
 }
+
+.section-head {
+    padding: 20;
+}
+
 .row {
     margin: 0;
 }
@@ -426,6 +431,7 @@ body {
 
 .poster {
     width: 90%;
+    margin: 20;
 }
 
 /* END */
