@@ -541,6 +541,18 @@ body {
     background: #000;
 }
 
+.Answer {
+    animation: greenANI 2s;
+}
+
+.fadeOut {
+    animation: fadeOut 1s;
+}
+
+.fadeIn {
+    animation: fadeIn 1s;
+}
+
 /* END */
 
 #end {
@@ -621,8 +633,35 @@ body {
     }
 }
 
+@keyframes greenANI {
+    from{
+        background-color: none;
+    }
+    to{
+        background-color: forestgreen;
+    }
+}
 
+@keyframes fadeOut{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        display: none
+    }
+}
 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        display: none
+    }
+    to{
+        opacity: 1;
+        display: block;
+    }
+}
 
 /* ____     ____
    |   \    |   \     |     |   |    |
@@ -633,3 +672,5 @@ body {
    | |\ \   |    \    |     |   |    |
    | |/ /   |     \   |     |   |    |
    |___/    |      \  \_____/   |    | */
+
+/* SIR LEGEND HO KYA?? */
