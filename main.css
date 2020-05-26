@@ -34,6 +34,10 @@ html {
     background-color: var(--scroll-fg-color);
 }
 
+::placeholder { 
+  color: rgba(255, 238, 197, 0.5);
+}
+
 @font-face {
     font-family: "garage-gothic";
     src: url("images/font.otf");
@@ -545,10 +549,6 @@ body {
     animation: greenANI 2s;
 }
 
-.comments {
-    color:white
-}
-
 .fadeOut {
     animation: fadeOut 1s;
 }
@@ -574,9 +574,6 @@ body {
     margin: 0 2%;
     width: 50%;
 }
-<<<<<<< HEAD
- 
-=======
 
 /* COMMENTS */
 
@@ -612,7 +609,7 @@ input[type=email], input[type=text], textarea {
     color: #fff;
 }
 
-input[type="email"]:focus-within, input[type="text"]:focus-within, textarea {
+input[type="email"]:focus-within, input[type="text"]:focus-within, textarea:focus-within {
     border: transparent solid 2px;
     border-bottom-color: var(--primary-color);
 }
@@ -627,7 +624,6 @@ input[type="email"]:focus-within, input[type="text"]:focus-within, textarea {
     padding: 30;
 }
 
->>>>>>> parent of 49075b5... Update main.css
 /* ANIMATIONS */
 
 @keyframes changebg {

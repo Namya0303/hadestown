@@ -57,3 +57,8 @@ $('.links span').click(function(){
     $("#"+$(this).attr("alt")).addClass("active");
 })
    
+
+function auto_height(elem) {  /* javascript */
+    elem.style.height = "2px";
+    elem.style.height = (elem.scrollHeight)+"px";
+}
