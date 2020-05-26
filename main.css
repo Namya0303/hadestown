@@ -34,6 +34,10 @@ html {
     background-color: var(--scroll-fg-color);
 }
 
+::placeholder { 
+  color: rgba(255, 238, 197, 0.5);
+}
+
 @font-face {
     font-family: "garage-gothic";
     src: url("images/font.otf");
@@ -570,7 +574,56 @@ body {
     margin: 0 2%;
     width: 50%;
 }
- 
+
+/* COMMENTS */
+
+input[type=email], input[type=text], textarea {
+    border: transparent solid 2px;
+    border-bottom-color: var(--secondary-color);
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 35%;
+    transition: 0.25s;
+    text-align: center;
+    margin: 10px auto;
+    background: none;
+    margin: 20;
+}
+
+#compost {
+    border: var(--primary-color) solid 2px;
+    background: none;
+    border-radius: 30px;
+    padding: 10;
+    justify-content: center;
+    align-content: center;
+    width: 17%;
+    transition: 0.5s;
+    text-align: center;
+    margin: 5px auto;
+}
+
+#compost:hover{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+input[type="email"]:focus-within, input[type="text"]:focus-within, textarea {
+    border: transparent solid 2px;
+    border-bottom-color: var(--primary-color);
+}
+
+#comment_post {
+    width: 50%;
+}
+
+.comments p, .comment_input {
+    background-color: rgba(9, 11, 13, 0.5);
+    border-radius: 20px;
+    padding: 30;
+}
+
 /* ANIMATIONS */
 
 @keyframes changebg {
