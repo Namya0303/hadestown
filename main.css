@@ -595,13 +595,16 @@ input[type=email], input[type=text], textarea {
     border: var(--primary-color) solid 2px;
     background: none;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 15px;
     justify-content: center;
     align-content: center;
-    width: 17%;
     transition: 0.5s;
     text-align: center;
     margin: 5px auto;
+}
+
+textarea {
+    width: 50%;
 }
 
 #compost:hover{
@@ -624,6 +627,30 @@ input[type="email"]:focus-within, input[type="text"]:focus-within, textarea:focu
     padding: 30;
 }
 
+.card-body {
+    background-color: rgba(9, 11, 13, 0.5);
+    border-radius: 20px;
+    padding: 30 30 30 70;
+    margin: 20 0;
+}
+
+.card {
+    color: var(--bg-color);
+    font-size: 17;
+}
+
+.card:hover {
+    color: var(--bg-color);
+    text-decoration: none;
+}
+
+.time {
+    color: #fff7e4;
+}
+
+.card-title {
+    font-size: 25;
+}
 
 #posts-list.has-comments li.no-comments {
   display: none;
