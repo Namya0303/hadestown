@@ -186,5 +186,5 @@ var questions = {
 
     function reset() {
         $(".yeet").removeClass("Answer");
-        document.getElementsByClassName("Optio").checked = true;
+        document.getElementsByClassName("Optio").checked = false;
     }
