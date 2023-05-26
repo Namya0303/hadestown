@@ -1,12 +1,13 @@
 (function () {
     var firebaseConfig = {
-        apiKey: "AIzaSyBtqzUFSnx9oHSAB9Unl51e0Fcw2sR_kcs",
-        authDomain: "fornamya-1ecf9.firebaseapp.com",
-        databaseURL: "https://fornamya-1ecf9.firebaseio.com",
-        projectId: "fornamya-1ecf9",
-        storageBucket: "fornamya-1ecf9.appspot.com",
-        messagingSenderId: "895907982672",
-        appId: "1:895907982672:web:a7504caca9a47bf4ad9055"
+        apiKey: "AIzaSyAw0ohsJzwqF6Xim1FDJass9SbAzueyolI",
+        authDomain: "basic-commenting.firebaseapp.com",
+        databaseURL: "https://basic-commenting.firebaseio.com",
+        projectId: "basic-commenting",
+        storageBucket: "basic-commenting.appspot.com",
+        messagingSenderId: "407856947003",
+        appId: "1:407856947003:web:fdaa5015d767ab56c3211e",
+        measurementId: "G-V2RXY1C3JR"
     };
     firebase.initializeApp(firebaseConfig);
 }());
